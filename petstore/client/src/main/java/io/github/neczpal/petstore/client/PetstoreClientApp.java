@@ -22,10 +22,7 @@ public class PetstoreClientApp {
 
         System.out.println("Connecting to Petstore Server at: " + serverUrl);
 
-        // Adjust the client paths since the paths in the server controller use /pet
-        // Assuming the restclient generator didn't add /pet basepath. 
-        // We will append it to the base URL manually.
-        PetClient petClient = new PetClient(serverUrl + "/pet");
+        PetClient petClient = new PetClient(serverUrl);
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
