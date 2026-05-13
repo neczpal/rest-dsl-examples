@@ -63,6 +63,7 @@
                         <configuration>
                             <inputFile>${project.parent.basedir}/petstore.rdsl</inputFile>
                             <generatorName>spring</generatorName>
+                            <outputDirectory>target/generated-sources/java</outputDirectory>
                             <packageName>io.github.neczpal.petstore.server</packageName>
                         </configuration>
                     </execution>

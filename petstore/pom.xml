@@ -22,4 +22,25 @@
         <petstore.server.url>http://localhost:8080</petstore.server.url>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.github.neczpal</groupId>
+                <artifactId>rest-dsl-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputFile>${project.basedir}/petstore.rdsl</inputFile>
+                            <generatorName>openapi</generatorName>
+                            <outputDirectory>${project.basedir}</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

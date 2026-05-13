@@ -49,6 +49,7 @@
                         <configuration>
                             <inputFile>${project.parent.basedir}/petstore.rdsl</inputFile>
                             <generatorName>restclient</generatorName>
+                            <outputDirectory>target/generated-sources/java</outputDirectory>
                             <packageName>io.github.neczpal.petstore.client</packageName>
                         </configuration>
                     </execution>
